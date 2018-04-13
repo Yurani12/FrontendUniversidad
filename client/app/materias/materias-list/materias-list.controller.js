@@ -2,8 +2,8 @@
 (function(){
 
 class MateriasListComponent {
-  constructor(materiasSerice) {
-    this.materiasSerice = materiasSerice;
+  constructor(materiasService) {
+    this.materiasService = materiasService;
   }
   $onInit(){
   	this.materiasService.query().$promise

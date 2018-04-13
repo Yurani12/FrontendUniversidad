@@ -1,0 +1,106 @@
+@import "../bower_components/font-awesome/css/font-awesome.css"
+@import "../bower_components/bootstrap/dist/css/bootstrap.css"
+
+//
+// Bootstrap Fonts
+//
+
+@font-face
+  font-family: 'Glyphicons Halflings'
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot')
+  src: url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+
+//
+// Font Awesome Fonts
+//
+
+@font-face
+  font-family: 'FontAwesome'
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0')
+  src: url('../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal
+  font-style: normal
+
+//
+// App-wide Styles
+//
+
+.browserupgrade
+  background #ccc
+  color #000
+  margin 0.2em 0
+  padding 0.2em 0
+  
+hbody
+    padding 0
+    margin 0
+    background #FFF
+    font-family 'open Sans', sans-serif
+    a
+        transition 0.5s all
+        -webkit-transition 0.5s all
+        -moz-transition 0.5s all
+        -o-transition 0.5s all
+        -ms-transition 0.5s all
+        text-decoration none
+        &:hover
+            text-decoration none
+
+body a:focus, a:hover
+    text-decoration none
+
+input[type="button"], input[type="submit"]
+    transition 0.5s all
+    -webkit-transition 0.5s all
+    -moz-transition 0.5s all
+    -o-transition 0.5s all
+    -ms-transition 0.5s all
+
+h1, h2, h3, h4, h5, h6
+    margin 0
+    padding 0
+    font-family 'Libre Franklin', sans-serif
+
+p
+    margin 0
+    font-family 'Open Sans', sans-serif
+
+ul
+    margin 0
+    padding 0
+
+label
+    margin 0
+
+a:focus, a:hover
+    text-decoration none
+    outline none
+
+img
+    width 100%
+
+input[type="submit"],.w3l_header_left ul li a,.related-post-right h4 a,.comments-grid-right h4 a,.reply a,.w3_single_grid_left_grid ul li a,ul.contact_info li a,.w3ls_services_bottom_grid_grid_pos,.footer-copy p a,.w3l_services_grid h4 a,.agileinfo_footer_grid ul li a,.wthree_service_breadcrumb_left ul li a
+    transition .5s ease-in
+    -webkit-transition .5s ease-in
+    -moz-transition .5s ease-in
+    -o-transition .5s ease-in
+    -ms-transition .5s ease-in
+
+// Component styles are injected through grunt
+/* inject:styl */
+@import 'login/login';
+@import 'main/main';
+@import 'materias/materias-create/materias-create';
+@import 'materias/materias-list/materias-list';
+@import 'materias/materias-update/materias-update';
+@import 'usuarios/usuarios-create/usuarios-create';
+@import '../components/footer/footer';
+@import '../components/modal/modal';
+@import '../components/navbar/navbar';
+/* endinject */

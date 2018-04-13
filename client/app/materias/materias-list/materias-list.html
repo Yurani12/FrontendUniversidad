@@ -1,0 +1,29 @@
+<div>This is the materias-list view.</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+
+	<table class="table table-bordered">
+    <thead class="Table-Head">
+      <tr class="Table-Item">
+        <th class="Table-Celdas">ID</th>
+        <th class="Table-Celdas">MARCA</th>
+        <th class="Table-Celdas">MODELO</th>
+        <th class="Table-Celdas">VALOR</th>
+      </tr>
+    </thead>
+    <tbody class="Table-Body">
+      <tr ng-repeat="item in vm.materias" class="Table-ngItem">
+        <td class="Table-ngCeldas">{{item.}}</td>
+        <td class="Table-ngCeldas">{{item.}}</td>
+        <td class="Table-ngCeldas">{{item.}}</td>
+        <td class="Table-ngCeldas">{{item.valor}}</td>
+        <td><a ui-sref="materias-update({idMaterias:item.id})">Editar</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+		</div>
+	</div>
+</div>

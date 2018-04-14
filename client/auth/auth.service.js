@@ -17,7 +17,7 @@ function login(user,collback){
         progressBar: true,
         closeButton: true
 });
-		$state.go('main');
+		$state.go('materias-list');
 	})
 	.catch(err => {
         toastr.error('Error de login vuelvalo a intentar',{

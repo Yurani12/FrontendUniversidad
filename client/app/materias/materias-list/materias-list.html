@@ -1,24 +1,22 @@
-<h3 style="color: black; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; font-weight: 300; text-align: center">Lista de las Materias!!</h3>
+
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-10">
-
+		<h3 style="color: #d51ed8; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; font-weight: 300; text-align: center; margin-top: 20px; margin-bottom: 20px">Lista de las Materias!!</h3>
 	<table class="table table-bordered">
     <thead class="Table-Head">
       <tr class="Table-Item">
-        <th class="Table-Celdas">ID</th>
-        <th class="Table-Celdas">CUPOS</th>
-        <th class="Table-Celdas">DESCRIPCION</th>
-        <th class="Table-Celdas">NOMBRE</th>
+        <th style="color: #2a6496" class="Table-Celdas">NOMBRE</th>
+        <th style="color: #2a6496" class="Table-Celdas">DESCRIPCION</th>
+        <th style="color: #2a6496" class="Table-Celdas">CUPOS</th>
       </tr>
     </thead>
     <tbody class="Table-Body">
       <tr ng-repeat="item in vm.materias" class="Table-ngItem">
-        <td class="Table-ngCeldas">{{item.id}}</td>
-        <td class="Table-ngCeldas">{{item.cupos}}</td>
-        <td class="Table-ngCeldas">{{item.descripcion}}</td>
         <td class="Table-ngCeldas">{{item.nombre}}</td>
+	<td class="Table-ngCeldas">{{item.descripcion}}</td>
+        <td class="Table-ngCeldas">{{item.cupos}}</td>
         <td><a ui-sref="materias-update({idMaterias:item.id})">Editar</a></td>
       </tr>
     </tbody>

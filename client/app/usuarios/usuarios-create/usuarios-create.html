@@ -1,54 +1,78 @@
+<!--div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			
+			<h2>'REGISTRESE</h2>
+			<form name="" ng-submit="vm.createUser()">
+
+			<label for="">Nombres</label>
+ 				 <input type="text" ng-model="vm.usuario.nombres">
+		
+			<label for="">Apellidos</label>
+				<input type="text" ng-model="vm.usuario.apellidos">
+
+			<label for="">Documento</label>
+				<input type="text" ng-model="vm.usuario.documento">
+
+			<label for="">Correo</label>
+				<input type="text" ng-model="vm.usuario.email">
+
+			<!--label for="">estado</label>
+				<input type="text" ng-model="vm.usuario.estado"-->
+
+			<!--label for="">Contraseña</label>
+				<input type="number" ng-model="vm.usuario.password">
+
+			<button type="submit">Registrar</button>
+				
+			</form>
+		</div>
+	</div>
+
+</div-->
+
     <div class="fond">
         <div class="content-agileits">
         <h1 class="title">Por favor Registrese</h1>
         <div class="left">
-            <form data-toggle="validator">
-                <div class="form-group">
-                    <label for="firstname" class="control-label">Nombre:</label>
-                    <input ng-model="vm.usuario.nombres" type="text" class="form-control" id="firstname" placeholder="First Name" data-error="Enter Your First Name" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <label for="lastname" class="control-label">Apellidos:</label>
-                    <input ng-model="vm.usuario.apellidos" type="text" class="form-control" id="Apellidos" placeholder="Last Name" data-error="Enter Your Last Name" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <label for="inputEmail" class="control-label">Correo:</label>
-                    <input ng-model="vm.usuario.email" type="email" class="form-control" id="Correo" placeholder="Email" data-error="This email address is invalid" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <label for="NumberDocument" class="control-label">Documento:</label>
-                    <input ng-model="vm.usuario.documento" type="text" class="form-control" id="NumberDocument" placeholder="NumberDocument" data-error="Enter Your Number Document" required>
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword" class="control-label">Contraseña:</label>
-                    <div class="form-inline row">
-                        <div class="form-group col-sm-6 agileits-w3layouts">
-                            <input ng-model="vm.usuario.password" type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
-                            <div class="help-block">Minimo 6 caracteres</div>
-                        </div>
-                        <!--div class="form-group col-sm-6 w3-agile">
-                            <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match"
-                                placeholder="Confirm Password" required>
-                            <div class="help-block with-errors"></div>
-                        </div-->
-                    </div>
-                </div>
-                <!--div class="form-group w3ls-opt">
-                    <label for="Phone" class="control-label">Gender</label>
 
-                    <label class="w3layouts">
-                        <input type="radio" name="work" id="hire" value="male" checked>Male
-                    </label>
-                    <label class="w3layouts label2">
-                        <input type="radio" name="work" id="work" value="female">Female
-                    </label>
-                </div-->
+            <form data-toggle="validator" ng-submit="vm.createUser()">
+
                 <div class="form-group">
-                    <button type="submit" class="btn btn-lg" ng-click="vm.createUser()">Registrar</button>
+                    <label for="nombre" class="control-label">Nombre:</label>
+                    <input ng-model="vm.usuario.nombres" type="text" class="form-control" placeholder="Ingrese sus nombres" data-error="Enter Your First Name" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos" class="control-label">Apellidos:</label>
+                    <input ng-model="vm.usuario.apellidos" type="text" class="form-control" placeholder="Ingrese sus apellidos" data-error="Enter Your Last Name" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email" class="control-label">Correo:</label>
+                    <input ng-model="vm.usuario.email" type="email" class="form-control" id="Correo" placeholder="Ingrese su correo" data-error="This email address is invalid" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="documento" class="control-label">Documento:</label>
+                    <input ng-model="vm.usuario.documento" type="text" class="form-control"  placeholder="Ingrese su numero de documento" data-error="Enter Your Number Document" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                
+		<div class="form-group">
+                    <label for="">Contraseña</label>
+                    <input type="password" ng-model="vm.usuario.password" class="form-control"  placeholder="contraseña" data-error="Enter Your password" required>
+                    <div class="help-block with-errors">Maximo  6 caracteres</div>
+                </div>
+		
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg">Registrar</button>
                 </div>
             </form>
         </div>

@@ -13,6 +13,7 @@ class UsuariosCreateComponent {
   	this.usuarioService.save(this.usuario).$promise
   	.then(response => {
   		console.log("Usuario registrado correctamente ",response);
+		this.usuario = response;
         this.toastr.success('cuenta creada', {
             progressBar: true,
             closeButton: true
@@ -27,6 +28,7 @@ class UsuariosCreateComponent {
           });
   	})
   }
+
 }
 UsuariosCreateComponent.$inject = ['usuarioService', '$state','toastr'];
 angular.module('universidadFrontedApp')

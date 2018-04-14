@@ -38,7 +38,7 @@
             <form data-toggle="validator" ng-submit="vm.createMaterias()"> 
 
                 <div class="form-group">
-                    <label for="Nombres" class="control-label">Nombres</label>
+                    <label for="Nombres" class="control-label">Nombre</label>
                     <input ng-model="vm.materias.nombre" type="text" class="form-control" placeholder="nombre de la materia" data-error="Nombre invalido" required>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -57,8 +57,9 @@
                 </div>
                 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-lg" >Crear</button>
-				
+                    <button  type="submit" class="btn btn-lg" >Crear</button>
+				<!-- ui-sref="materias-list"-->
+						
                 </div>
             </form>
         </div>

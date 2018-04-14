@@ -11,7 +11,7 @@ angular.module('universidadFrontedApp', [
   'ngAnimate',
   'toastr'
   ])
-.constant("API","http://localhost:8080/BackendUniversidad")
+.constant("API","http://localhost:8080/Universidad")
 .config(function(API, $authProvider){
   $authProvider.loginUrl = API + '/api/auth/login';
   $authProvider.tokenName = 'token';

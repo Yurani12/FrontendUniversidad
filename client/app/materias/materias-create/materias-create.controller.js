@@ -6,17 +6,18 @@ class MateriasCreateComponent {
     this.materiasService = materiasService;
   }
   createMaterias(){
-  	this.materiasService.save(this.matterias).$promise
+  	this.materiasService.save(this.materias).$promise
   	.then(response => {
-        console.log('materia creado', response);
-        this.materia = response;
+        console.log('MATERIA CREADA', response);
+        this.materias = response;
       })
       .catch(err => {
-        console.log('Error al crear materia', err);
+        console.log('ERROR AL CRERA MATERIA', err);
       });
   }
 }
 
+MateriasCreateComponent.$inject = ['materiasService']
 angular.module('universidadFrontedApp')
   .component('materiasCreate', {
     templateUrl: 'app/materias/materias-create/materias-create.html',

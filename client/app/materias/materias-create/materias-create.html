@@ -1,27 +1,64 @@
+<!--div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			
+			<h2>'REGISTRE SU MATERIA</h2>
+			<form name="" ng-submit="vm.createMaterias()">
+
+			<label for="">Nombre</label>
+ 				 <input type="text" ng-model="vm.materias.nombre">
+		
+			<label for="">Descripcion</label>
+				<input type="text" ng-model="vm.materias.descripcion">
+
+			<label for="">Cupos</label>
+				<input type="number" ng-model="vm.materias.cupos">
+
+			<button type="submit">Registrar</button>
+
+			</form>
+		</div>
+	</div>
+
+</div-->
+
+
+
+
+
+
+
+
 <div>This is the materias-create view.</div>
 <div class="fond">
         <div class="content-agileits">
         <h1 class="title">Por favor registre su materia</h1>
         <div class="left">
-            <form data-toggle="validator">
+
+            <form data-toggle="validator" ng-submit="vm.createMaterias()"> 
+
                 <div class="form-group">
-                    <label for="firstname" class="control-label">Nombre</label>
-                    <input ng-model="vm.materias.nombre" type="text" class="form-control" id="firstname" placeholder="nombre de la materia" data-error="Nombre invalido" required>
+                    <label for="Nombres" class="control-label">Nombres</label>
+                    <input ng-model="vm.materias.nombre" type="text" class="form-control" placeholder="nombre de la materia" data-error="Nombre invalido" required>
                     <div class="help-block with-errors"></div>
                 </div>
+			
+
                 <div class="form-group">
-                    <label for="descipcion" class="control-label">Descripcion</label>
-                    <input ng-model="vm.materias.descripcion" type="text" class="form-control" id="firstname" placeholder="descipcion de la materia" data-error="descipcion invalido" required>
+                    <label for="descripcion" class="control-label">Descripcion De la materia</label>
+                    <input ng-model="vm.materias.descripcion" type="text" class="form-control" placeholder="descipcion" data-error="descipcion invalida" required>
                     <div class="help-block with-errors"></div>
                 </div>
+
                 <div class="form-group">
-                    <label for="cupos" class="control-label">cupos</label>
-                    <input ng-model="vm.materias.cupos" type="text" class="form-control" id="firstname" placeholder="cantidad de cupos de la materia" data-error="cupos invalido" required>
+                    <label for="cupos" class="control-label">Cantidad De Cupos</label>
+                    <input ng-model="vm.materias.cupos" type="text" class="form-control" placeholder="cantidad de cupos de la materia" data-error="cupos invalido" required>
                     <div class="help-block with-errors"></div>
                 </div>
                 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-lg" ng-click="vm.createMaterias()">crear</button>
+                    <button type="submit" class="btn btn-lg" >Crear</button>
+				
                 </div>
             </form>
         </div>
